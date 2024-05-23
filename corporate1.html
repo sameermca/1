@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 20%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 0px;
+        width: 100%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    #select{
+        border-radius: 5px;
+    }
+    .card:hover{
+      background-color: #bc2d75;
+      border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <h4 style="margin-bottom:33px; margin-top: 17px;">Call / Fresh Call</h4>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>Corporate Base</h3>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <h3>Academis Base</h3>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h3>Student Base</h3>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h3>External Base</h3>
+          </div>
+        </div>
+      </div>
+  <h4 style="background-color: #bc2d75; margin-bottom: 0px; margin-top: 47px; width: 930px; border-radius:7px; height: 40px; padding: 15px; color: white;">Corporate Base</h4>
+  <table class="table table-striped  " style="width: 910px;">
+    <thead>
+      <tr>
+        <th>SL.No</th>
+        <th>Corporate Name</th>
+        <th>Email</th>
+        <th>Contack Number</th>
+        <th>Call</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>College 1</td>
+         <td>name1@gmail.com</td>
+         <td>9945212556</td>
+         <td>Call</td>
+         <td>
+            <button style="border-radius: 5px; background-color: #bc2d75;;"><a href="#" style="color: white;">Update</a></button>
+         </td>
+        </tr>
+      <tr>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
